@@ -142,52 +142,30 @@ img.add_border {
     <div id="tipue_search_content">w10_block_ui << <a href='w10_block_ui.html'>Previous</a> <a href='w10_ssh.html'>Next</a> >> w10_ssh<br /><h1>w10_nx_integ</h1>
 <p>以下影片嵌入 html 內容 (採用的<span> </span><a href="https://github.com/mdecourse/cmsimde/commit/6b37ee43533ceae4ec9e3b0de3486364308dc54d">cmsimde 版本</a>):</p>
 <div>
-<div class="syntaxhighlighter html" id="highlighter_131109">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
-<div class="line number2 index1 alt1"><code class="html plain">// 在 Javascript 標註內以兩個斜線加入單行註解</code></div>
-<div class="line number3 index2 alt2"><code class="html plain">// 每一個影片要有獨特的 data-varname 變數名稱</code></div>
-<div class="line number4 index3 alt1"><code class="html plain">var winkVideoData_w10_block_ui = {</code></div>
-<div class="line number5 index4 alt2"><code class="html spaces">  </code><code class="html plain">dataVersion: 1,</code></div>
-<div class="line number6 index5 alt1"><code class="html spaces">  </code><code class="html plain">frameRate: 10,</code></div>
-<div class="line number7 index6 alt2"><code class="html spaces">  </code><code class="html plain">buttonFrameLength: 5,</code></div>
-<div class="line number8 index7 alt1"><code class="html spaces">  </code><code class="html plain">buttonFrameOffset: 2,</code></div>
-<div class="line number9 index8 alt2"><code class="html spaces">  </code><code class="html plain">frameStops: {</code></div>
-<div class="line number10 index9 alt1"><code class="html spaces">  </code><code class="html plain">},</code></div>
-<div class="line number11 index10 alt2"><code class="html plain">};</code></div>
-<div class="line number12 index11 alt1"><code class="html plain">&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
-<div class="line number13 index12 alt2"><code class="html comments">&lt;!-- 將 mp4 檔案從 downloads 目錄取出 --&gt;</code></div>
-<div class="line number14 index13 alt1"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoContainerClass"</code> <code class="html color1">style</code><code class="html plain">=</code><code class="html string">"border: thin solid black; padding: 10px;"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">video</code> <code class="html color1">width</code><code class="html plain">=</code><code class="html string">"100%"</code> <code class="html color1">height</code><code class="html plain">=</code><code class="html string">"100%"</code> <code class="html color1">autoplay</code><code class="html plain">=</code><code class="html string">"autoplay"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoClass"</code> <code class="html color1">controls</code><code class="html plain">=</code><code class="html string">"controls"</code> <code class="html color1">data-dirname</code><code class="html plain">=</code><code class="html string">"./../cmsimde/static"</code> <code class="html color1">data-varname</code><code class="html plain">=</code><code class="html string">"winkVideoData_w10_block_ui"</code> <code class="html color1">muted</code><code class="html plain">=</code><code class="html string">"true"</code><code class="html plain">&gt;</code></div>
-<div class="line number15 index14 alt2"><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"./../downloads/w10_block_ui/w10_block_ui.mp4"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"video/mp4"</code> <code class="html plain">/&gt;&lt;/</code><code class="html keyword">video</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="syntaxhighlighter html" id="highlighter_131109"></div>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="600" width="900">
+<source src="./../downloads/0504.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
 </div>
-</div>
-<br />w10_block_ui << <a href='w10_block_ui.html'>Previous</a> <a href='w10_ssh.html'>Next</a> >> w10_ssh</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div><br />w10_block_ui << <a href='w10_block_ui.html'>Previous</a> <a href='w10_ssh.html'>Next</a> >> w10_ssh</div>
         
     <!-- footer -->
       <div class="container">
